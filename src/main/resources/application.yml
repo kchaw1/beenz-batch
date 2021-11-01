@@ -1,7 +1,9 @@
 spring:
-  datasource:
-    hikari:
-      jdbc-url: jdbc:mysql://localhost:3306/beenz_batch
-      username: beenz
-      password: beenz
-      driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    group:
+      mysql: "mysql"
+  batch:
+    job:
+      names: ${job.name:NONE}
+    jdbc:
+      initialize-schema: always

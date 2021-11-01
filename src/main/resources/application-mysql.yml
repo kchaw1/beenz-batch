@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/beenz_batch
+      username: beenz
+      password: beenz
+      driver-class-name: com.mysql.cj.jdbc.Driver
